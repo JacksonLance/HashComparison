@@ -4,6 +4,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HP {
+    public HP()
+    {
+
+    }
 
     public static String ToSHA256(byte[] convertSHA) {
         MessageDigest md = null;
@@ -62,22 +66,6 @@ public class HP {
     {
         return (CompareSHA256(s, two) == CompareSHA512(s,two));
     }
-    public static void main (String args[])
-    {
 
-        System.out.println(ToSHA256("Thursday".getBytes()));
-        System.out.println(ToSHA256("Thursday".getBytes()));
-        System.out.println(CompareSHA256("Thursday", "Thursday"));
-        System.out.println(ToSHA256("thursday".getBytes()));
-        System.out.println(CompareSHA256("Thursday", "thursday"));
-        System.out.println(ToSHA512("Thursday".getBytes()));
-        System.out.println(ToSHA512("thursday".getBytes()));
-        System.out.println(CompareSHA512("Thursday", "thursday"));
-        System.out.println(CompareBooleans("Thursday", "thursday"));
-
-
-
-
-    }
 
 }
