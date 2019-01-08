@@ -25,7 +25,9 @@ public class Main {
         {
             System.out.println(HP.CompareBooleans(words[i - 1],words[i]));
         }
-
+        System.out.println("A fun thing to think about is why thse two are so close.");
+        System.out.println(HP.ToSHA256("hashed in SHA256".getBytes()));
+        System.out.println(HP.ToSHA256("Hashed in SHA256".getBytes()));
 
 
 
